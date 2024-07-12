@@ -10,6 +10,7 @@ const eggReducer = (state=initialState, action) => {
             ...state,
             numOfEggs: state.numOfEggs - 1
         }
+        default: return state
     }
 }
 
