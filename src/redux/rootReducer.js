@@ -1,12 +1,12 @@
 import { combineReducers } from "redux";
 import eggReducer from "./egg/eggReducer";
 import chickenReducer from "./chicken/chickenReducer";
-import { useReducer } from "react";
+import userReducer from "./user/userReducer";
 
 const rootReducer = combineReducers({
     egg: eggReducer,
     chicken: chickenReducer,
-    user: useReducer
+    user: userReducer
 })
 
 export default rootReducer
